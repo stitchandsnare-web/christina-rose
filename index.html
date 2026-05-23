@@ -240,24 +240,7 @@
       text-transform: uppercase;
       color: var(--text-muted);
     }
-    .hero-badge {
-      position: absolute;
-      top: 2.5rem; right: 2.5rem;
-      width: 100px; height: 100px;
-      border-radius: 50%;
-      background: var(--espresso);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: var(--champagne);
-      font-family: 'Cormorant Garant', serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.06em;
-      line-height: 1.4;
-      padding: 1rem;
-      animation: rotate 20s linear infinite;
-    }
+
 
     /* ── ABOUT ── */
     .about {
@@ -896,6 +879,21 @@
         text-align: center;
       }
 
+      /* Nav logo + hamburger pop over dim */
+      nav .nav-logo { color: var(--ivory); }
+      .nav-hamburger span { background: var(--ivory); }
+      nav.scrolled .nav-logo { color: var(--espresso); }
+      nav.scrolled .nav-hamburger span { background: var(--espresso); }
+
+      /* Dim overlay on hero image so nav pops */
+      .hero-right::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(28, 20, 16, 0.35);
+        pointer-events: none;
+      }
+
       /* Disable parallax on mobile — bad for perf */
       .hero-img-main,
       .about-img,
@@ -969,7 +967,7 @@
         <p>10+</p>
         <span>Years of Experience</span>
       </div>
-      <div class="hero-badge">Event &amp;<br />Hospitality<br />Pro</div>
+
     </div>
   </section>
 
@@ -1172,6 +1170,20 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
