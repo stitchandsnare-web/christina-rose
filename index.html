@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christina Rose — Event Planning, Décor & Hospitality</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Christina Rose is a Florida-based event planner, décor stylist, and hospitality professional with 10+ years of experience crafting seamless, stunning events." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://christinarose.com/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, iMessage, WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://christinarose.com/" />
+  <meta property="og:title" content="Christina Rose — Event Planning, Décor & Hospitality" />
+  <meta property="og:description" content="Crafting seamless, stunning experiences — from intimate gatherings to large-scale events — with over a decade of hospitality expertise behind every detail." />
+  <meta property="og:image" content="https://stitchandsnare.com/wp-content/uploads/2026/05/6D0289C4-948A-4C52-9D74-9512221A4995.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Christina Rose — Event Planner & Hospitality Professional" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Christina Rose" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Christina Rose — Event Planning, Décor & Hospitality" />
+  <meta name="twitter:description" content="Crafting seamless, stunning experiences — from intimate gatherings to large-scale events — with over a decade of hospitality expertise." />
+  <meta name="twitter:image" content="https://stitchandsnare.com/wp-content/uploads/2026/05/6D0289C4-948A-4C52-9D74-9512221A4995.jpg" />
+  <meta name="twitter:image:alt" content="Christina Rose — Event Planner & Hospitality Professional" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --espresso:   #1c1410;
+      --ivory:      #faf6f0;
+      --champagne:  #e8d9c0;
+      --rose:       #c9a99a;
+      --rose-deep:  #a8756a;
+      --sage:       #8a9e8c;
+      --text-main:  #2a1f1a;
+      --text-muted: #7a6a62;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--ivory);
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      mix-blend-mode: normal;
+      background: transparent;
+      transition: background 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(250, 246, 240, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--champagne);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--espresso);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      text-decoration: none;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 1px;
+      background: var(--rose-deep);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ivory);
+      background: var(--espresso);
+      padding: 0.65rem 1.5rem;
+      text-decoration: none;
+      transition: background 0.25s;
+    }
+    .nav-cta:hover { background: var(--rose-deep); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10rem 4rem 6rem 5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--rose-deep);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-name {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(3.5rem, 6vw, 6rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--espresso);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.4s forwards;
+    }
+    .hero-name em {
+      font-style: italic;
+      color: var(--rose-deep);
+    }
+    .hero-tagline {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 380px;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.6s forwards;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.8s forwards;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      background: var(--espresso);
+      color: var(--ivory);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--rose-deep); transform: translateY(-2px); }
+    .btn-secondary {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      border: 1px solid var(--rose);
+      color: var(--text-main);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.25s, color 0.25s;
+    }
+    .btn-secondary:hover { border-color: var(--rose-deep); color: var(--rose-deep); }
+
+    /* decorative line */
+    .hero-left::before {
+      content: '';
+      position: absolute;
+      left: 3rem; top: 50%;
+      transform: translateY(-50%);
+      width: 1px; height: 140px;
+      background: linear-gradient(to bottom, transparent, var(--champagne), transparent);
+    }
+
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-img-main {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: sepia(8%) saturate(90%);
+    }
+    /* overlay card */
+    .hero-stat-card {
+      position: absolute;
+      bottom: 3rem; left: -2.5rem;
+      background: var(--ivory);
+      padding: 1.5rem 2rem;
+      border-left: 3px solid var(--rose-deep);
+      box-shadow: 0 12px 40px rgba(28,20,16,0.15);
+      opacity: 0;
+      animation: fadeIn 1s 1.2s forwards;
+    }
+    .hero-stat-card p {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--espresso);
+      line-height: 1;
+    }
+    .hero-stat-card span {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .hero-badge {
+      position: absolute;
+      top: 2.5rem; right: 2.5rem;
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: var(--espresso);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--champagne);
+      font-family: 'Cormorant Garant', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      line-height: 1.4;
+      padding: 1rem;
+      animation: rotate 20s linear infinite;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 80vh;
+    }
+    .about-image-col {
+      position: relative;
+      background: var(--champagne);
+      overflow: hidden;
+    }
+    .about-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+    }
+    .about-img-label {
+      position: absolute;
+      bottom: 2rem; right: 2rem;
+      font-family: 'Cormorant Garant', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.25);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .about-content {
+      padding: 6rem 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: var(--espresso);
+      color: var(--ivory);
+    }
+    .section-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 1.5rem;
+    }
+    .about-content .section-label { color: var(--rose); }
+    .about-heading {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      color: var(--champagne);
+    }
+    .about-heading em { font-style: italic; color: var(--rose); }
+    .about-body {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: rgba(250,246,240,0.7);
+      margin-bottom: 2.5rem;
+      max-width: 440px;
+    }
+    .about-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border: 1px solid rgba(201,169,154,0.4);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose);
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      padding: 7rem 5rem;
+      background: var(--ivory);
+    }
+    .services-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+    .section-heading {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--espresso);
+    }
+    .section-heading em { font-style: italic; color: var(--rose-deep); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--champagne);
+    }
+    .service-card {
+      padding: 3rem 2.5rem;
+      border-right: 1px solid var(--champagne);
+      position: relative;
+      transition: background 0.3s;
+      overflow: hidden;
+    }
+    .service-card:last-child { border-right: none; }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 0;
+      background: var(--espresso);
+      transition: height 0.35s ease;
+      z-index: 0;
+    }
+    .service-card:hover::before { height: 100%; }
+    .service-card * { position: relative; z-index: 1; }
+    .service-card:hover .service-icon,
+    .service-card:hover .service-title,
+    .service-card:hover .service-desc { color: var(--ivory); }
+    .service-card:hover .service-title { color: var(--champagne); }
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      transition: color 0.3s;
+    }
+    .service-num {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--rose);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .service-title {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--espresso);
+      margin-bottom: 1rem;
+      transition: color 0.3s;
+    }
+    .service-desc {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      transition: color 0.3s;
+    }
+
+    /* ── GALLERY / WORK ── */
+    .work {
+      padding: 7rem 5rem;
+      background: #f3ede4;
+    }
+    .work-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 320px 320px;
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: var(--champagne);
+      cursor: pointer;
+    }
+    .gallery-item:first-child {
+      grid-row: 1 / 3;
+    }
+    .gallery-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, filter 0.4s;
+      filter: sepia(5%) saturate(90%);
+    }
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.05);
+      filter: sepia(0%) saturate(100%);
+    }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(28,20,16,0.7) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.4s;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-caption {
+      color: var(--ivory);
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    /* ── HOSPITALITY ── */
+    .hospitality {
+      padding: 7rem 5rem;
+      background: var(--espresso);
+      color: var(--ivory);
+      position: relative;
+      overflow: hidden;
+    }
+    .hospitality::before {
+      content: 'Hospitality';
+      position: absolute;
+      right: -2rem; top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      font-family: 'Cormorant Garant', serif;
+      font-size: 10rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.03);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .hosp-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    .hosp-content .section-label { color: var(--rose); }
+    .hosp-heading {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 300;
+      color: var(--champagne);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    .hosp-heading em { font-style: italic; color: var(--rose); }
+    .hosp-body {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: rgba(250,246,240,0.65);
+      margin-bottom: 2.5rem;
+    }
+    .hosp-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .stat-block {
+      padding: 1.5rem;
+      border: 1px solid rgba(201,169,154,0.2);
+    }
+    .stat-num {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--rose);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(250,246,240,0.45);
+    }
+    .hosp-venue-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .hosp-venue-list li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(201,169,154,0.15);
+      font-size: 0.9rem;
+      color: rgba(250,246,240,0.7);
+    }
+    .hosp-venue-list li::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--rose);
+      flex-shrink: 0;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials {
+      padding: 7rem 5rem;
+      background: var(--ivory);
+    }
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+    .test-card {
+      padding: 2.5rem;
+      border: 1px solid var(--champagne);
+      position: relative;
+    }
+    .test-card::before {
+      content: '\201C';
+      font-family: 'Cormorant Garant', serif;
+      font-size: 5rem;
+      color: var(--rose);
+      line-height: 1;
+      position: absolute;
+      top: 1rem; left: 2rem;
+      opacity: 0.4;
+    }
+    .test-body {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+    .test-author {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .test-role {
+      font-size: 0.72rem;
+      color: var(--rose-deep);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+      padding: 7rem 5rem;
+      background: var(--champagne);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    .contact-heading {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+      font-weight: 300;
+      color: var(--espresso);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .contact-heading em { font-style: italic; color: var(--rose-deep); }
+    .contact-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+    .contact-detail span { font-size: 1.2rem; }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      background: var(--ivory);
+      border: 1px solid rgba(28,20,16,0.15);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.25s;
+    }
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--rose-deep);
+    }
+    .form-textarea { height: 120px; resize: vertical; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2.5rem 5rem;
+      background: var(--espresso);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--champagne);
+      letter-spacing: 0.06em;
+    }
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(250,246,240,0.35);
+      letter-spacing: 0.06em;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .footer-socials a {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(250,246,240,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-socials a:hover { color: var(--rose); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── PARALLAX ── */
+    .parallax-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .parallax-img {
+      width: 100%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: -15%;
+      left: 0;
+      will-change: transform;
+    }
+    /* hero parallax */
+    .hero-right {
+      overflow: hidden;
+    }
+    .hero-img-main {
+      height: 130%;
+      top: -15%;
+      position: absolute;
+      will-change: transform;
+    }
+    /* about parallax */
+    .about-image-col {
+      overflow: hidden;
+    }
+    .about-img {
+      height: 130% !important;
+      top: -15%;
+      position: absolute;
+      will-change: transform;
+    }
+    /* gallery parallax — images overflow their containers */
+    .gallery-item {
+      overflow: hidden;
+    }
+    .gallery-img {
+      height: 130%;
+      top: -15%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      will-change: transform;
+    }
+
+    /* ── PLACEHOLDER IMAGES ── */
+    .img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garant', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: rgba(28,20,16,0.25);
+      background: var(--champagne);
+      min-height: 320px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Christina Rose</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Portfolio</a></li>
+      <li><a href="#hospitality">Experience</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Work Together</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Event Planning · Décor · Hospitality</p>
+      <h1 class="hero-name">Christina<br /><em>Rose</em></h1>
+      <p class="hero-tagline">
+        Crafting seamless, stunning experiences — from intimate gatherings to large-scale events — with over a decade of hospitality expertise behind every detail.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img class="hero-img-main" src="https://stitchandsnare.com/wp-content/uploads/2026/05/6D0289C4-948A-4C52-9D74-9512221A4995.jpg" alt="Christina Rose" />
+      <div class="hero-stat-card">
+        <p>10+</p>
+        <span>Years of Experience</span>
+      </div>
+      <div class="hero-badge">Event &amp;<br />Hospitality<br />Pro</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-image-col">
+      <img class="about-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/52B3CE3A-1778-4631-A592-EA7298AFAFED.jpg" alt="Christina Rose" style="min-height:600px;" />
+      <div class="about-img-label">Story</div>
+    </div>
+    <div class="about-content">
+      <p class="section-label">About Christina</p>
+      <h2 class="about-heading">Where <em>passion</em><br />meets precision</h2>
+      <p class="about-body">
+        With a background spanning event planning, décor design, and hospitality from yacht clubs to fine dining restaurants, Christina brings both creative vision and professional discipline to every engagement. She doesn't just plan events — she curates experiences that guests remember long after the night ends.
+      </p>
+      <p class="about-body">
+        Having worked across Florida's most demanding hospitality environments, Christina understands how to maintain grace under pressure while delivering on the finest details.
+      </p>
+      <div class="about-pills reveal">
+        <span class="pill">Event Planning</span>
+        <span class="pill">Event Décor</span>
+        <span class="pill">Event Management</span>
+        <span class="pill">Bartending</span>
+        <span class="pill">Hospitality Service</span>
+        <span class="pill">Venue Operations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-header reveal">
+      <div>
+        <p class="section-label">What I Do</p>
+        <h2 class="section-heading">Services &amp;<br /><em>Specialties</em></h2>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <div class="service-icon">✦</div>
+        <h3 class="service-title">Event Planning</h3>
+        <p class="service-desc">End-to-end coordination for corporate events, weddings, private parties, and celebrations of all scales. From vendor sourcing to day-of execution.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">02</span>
+        <div class="service-icon">❧</div>
+        <h3 class="service-title">Event Décor & Styling</h3>
+        <p class="service-desc">Transforming venues through curated floral arrangements, table design, lighting concepts, and thematic styling that bring your vision to life.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">03</span>
+        <div class="service-icon">◈</div>
+        <h3 class="service-title">Event Management</h3>
+        <p class="service-desc">On-site management ensuring every moving part runs smoothly — staff coordination, timeline management, and real-time problem solving.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / PORTFOLIO -->
+  <section class="work" id="work">
+    <div class="work-header reveal">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-heading">Selected <em>Work</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img class="gallery-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/IMG_2453.jpg" alt="Event" />
+        <div class="gallery-overlay"><span class="gallery-caption">Garden Wedding Reception, 2024</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img class="gallery-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/IMG_2452-rotated.jpg" alt="Event" />
+        <div class="gallery-overlay"><span class="gallery-caption">Corporate Gala</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img class="gallery-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/A884154F-A09A-41A6-B55C-1283FF47B017.jpg" alt="Event" />
+        <div class="gallery-overlay"><span class="gallery-caption">Tablescape Design</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img class="gallery-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/DB0DF84E-E80E-4581-916B-5F6A69F69557.jpg" alt="Event" />
+        <div class="gallery-overlay"><span class="gallery-caption">Private Celebration</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img class="gallery-img" src="https://stitchandsnare.com/wp-content/uploads/2026/05/IMG_2448.jpg" alt="Event" />
+        <div class="gallery-overlay"><span class="gallery-caption">Floral Installation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOSPITALITY -->
+  <section class="hospitality" id="hospitality">
+    <div class="hosp-inner">
+      <div class="hosp-content reveal">
+        <p class="section-label">Experience</p>
+        <h2 class="hosp-heading">A decade of<br /><em>hospitality</em></h2>
+        <p class="hosp-body">
+          From yacht club bars to high-volume restaurant floors, Christina has served at the highest standards of hospitality. This front-line experience informs every event she plans — she knows what guests need before they ask.
+        </p>
+        <div class="hosp-stats">
+          <div class="stat-block">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years in Service</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">100s</div>
+            <div class="stat-label">Events Worked</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">5★</div>
+            <div class="stat-label">Guest Experience</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">Multi</div>
+            <div class="stat-label">Venue Types</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="section-label" style="margin-bottom:1.5rem;">Venues &amp; Environments</p>
+        <ul class="hosp-venue-list">
+          <li>Yacht Clubs &amp; Private Members' Clubs</li>
+          <li>Fine Dining Restaurants</li>
+          <li>Casual &amp; High-Volume Dining</li>
+          <li>Banquet &amp; Event Facilities</li>
+          <li>Bar Programs &amp; Craft Cocktails</li>
+          <li>Outdoor &amp; Seasonal Event Spaces</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="reveal" style="text-align:center;">
+      <p class="section-label">Kind Words</p>
+      <h2 class="section-heading">What <em>clients</em> say</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <p class="test-body">Christina turned our vision into something far more beautiful than we imagined. Every detail was perfect, and the night ran without a single hiccup.</p>
+        <p class="test-author">— Sarah M.</p>
+        <p class="test-role">Wedding Client</p>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-body">She managed our corporate gala for 200 guests seamlessly. Professional, creative, and genuinely invested in making the event exceptional.</p>
+        <p class="test-author">— James T.</p>
+        <p class="test-role">Corporate Event Director</p>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-body">The décor installations Christina designed were the talk of the event. Guests were asking about her for weeks afterward.</p>
+        <p class="test-author">— Maria L.</p>
+        <p class="test-role">Private Party Host</p>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-body">Having someone with her level of hospitality experience running our event made all the difference. She knows service culture from the inside out.</p>
+        <p class="test-author">— David R.</p>
+        <p class="test-role">Venue Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="reveal">
+      <p class="section-label">Let's Connect</p>
+      <h2 class="contact-heading">Ready to create<br />something <em>beautiful?</em></h2>
+      <p class="contact-sub">Whether it's an intimate dinner party or a large-scale event, let's talk about bringing your vision to life.</p>
+      <div class="contact-detail"><span>✉</span> hello@christinarose.com</div>
+      <div class="contact-detail"><span>📱</span> (000) 000-0000</div>
+      <div class="contact-detail"><span>📍</span> Florida, USA</div>
+    </div>
+    <div class="reveal">
+      <div class="contact-form">
+        <div class="form-row">
+          <input class="form-input" type="text" placeholder="Your Name" />
+          <input class="form-input" type="email" placeholder="Email Address" />
+        </div>
+        <input class="form-input" type="text" placeholder="Event Type / Occasion" />
+        <input class="form-input" type="text" placeholder="Approximate Date" />
+        <textarea class="form-textarea" placeholder="Tell me about your event..."></textarea>
+        <button class="btn-primary" style="border:none; cursor:pointer; font-family:'DM Sans',sans-serif;">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Christina Rose</div>
+    <p class="footer-copy">© 2025 Christina Rose. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── PARALLAX ──
+    // Elements: [element, speed multiplier (0 = no move, 1 = full scroll speed)]
+    const parallaxTargets = [
+      { el: document.querySelector('.hero-img-main'),   speed: 0.25 },
+      { el: document.querySelector('.about-img'),        speed: 0.2  },
+    ];
+
+    // Gallery images
+    document.querySelectorAll('.gallery-img').forEach(img => {
+      parallaxTargets.push({ el: img, speed: 0.18 });
+    });
+
+    function applyParallax() {
+      const scrollY = window.scrollY;
+      parallaxTargets.forEach(({ el, speed }) => {
+        if (!el) return;
+        const rect = el.closest('.gallery-item, .hero-right, .about-image-col')?.getBoundingClientRect();
+        if (!rect) return;
+        // Only animate when near viewport
+        if (rect.bottom < -200 || rect.top > window.innerHeight + 200) return;
+        const centerOffset = rect.top + rect.height / 2 - window.innerHeight / 2;
+        const shift = centerOffset * speed;
+        el.style.transform = `translateY(${shift}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', applyParallax, { passive: true });
+    window.addEventListener('resize', applyParallax, { passive: true });
+    applyParallax();
+  </script>
+</body>
+</html>
